@@ -10,10 +10,13 @@ import UIKit
 
 class EBTSecondViewController: UIViewController {
  
+    @IBOutlet weak var textFieldContent: UITextField!
+    @IBOutlet weak var btnPush: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        self.btnPush.addTarget(self, action: "btnPushClick", forControlEvents: UIControlEvents.TouchUpInside)
 
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,7 +26,17 @@ class EBTSecondViewController: UIViewController {
     
 
    
+    func btnPushClick()
+    {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let testCtl = storyBoard.instantiateViewControllerWithIdentifier("EBTTestViewController")as! EBTTestViewController
+        testCtl.backResult { (selectIndex) -> Void in
+            
+            self.textFieldContent.text = selectIndex as? String
+        }
+        self.navigationController?.pushViewController(testCtl, animated: true)
     
+    }
     
     
     

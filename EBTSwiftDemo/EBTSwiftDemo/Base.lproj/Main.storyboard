@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CKf-Ut-8p5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="EBTFirstViewController" title="首页" id="vXZ-lx-hvc" customClass="EBTFirstViewController" customModule="EBTSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="lts-tb-I2M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="WVi-fe-4IN"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="M4y-p9-IYu"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lts-tb-I2M" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="7hl-5W-T3E"/>
+                            <constraint firstAttribute="trailing" secondItem="lts-tb-I2M" secondAttribute="trailing" id="Zzz-KB-Hq2"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="lts-tb-I2M" secondAttribute="bottom" id="cXm-GU-eow"/>
+                            <constraint firstItem="lts-tb-I2M" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="yr6-m8-RpD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UJf-hf-gqo"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="listTableView" destination="lts-tb-I2M" id="WtC-5K-Iad"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1493.5" y="145.5"/>
+        </scene>
+        <!--财富-->
+        <scene sceneID="Ouq-qJ-NIs">
+            <objects>
+                <viewController storyboardIdentifier="EBTFourViewController" title="财富" id="9hf-8i-2u1" customClass="EBTFourViewController" customModule="EBTSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mk0-W7-gJ0"/>
+                        <viewControllerLayoutGuide type="bottom" id="PqB-df-4mk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yzM-ec-sgb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96Z-dm-8Ti" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-987.5" y="925.5"/>
+        </scene>
+        <!--投资-->
+        <scene sceneID="96X-Fx-iAL">
+            <objects>
+                <viewController storyboardIdentifier="EBTSecondViewController" title="投资" id="Eox-sp-YGN" customClass="EBTSecondViewController" customModule="EBTSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="udF-V3-VDP"/>
+                        <viewControllerLayoutGuide type="bottom" id="w6I-hd-qSa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nRc-22-wR5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBq-Bs-YBC">
+                                <rect key="frame" x="99" y="174" width="198" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zx9-Nz-yZS">
+                                <rect key="frame" x="164" y="237" width="61" height="30"/>
+                                <state key="normal" title="push">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btnPush" destination="zx9-Nz-yZS" id="wtl-VJ-cMB"/>
+                        <outlet property="textFieldContent" destination="hBq-Bs-YBC" id="p66-js-IOl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PYh-Wh-6Ud" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-435.5" y="145.5"/>
+        </scene>
+        <!--活动详情-->
+        <scene sceneID="dNz-US-2SJ">
+            <objects>
+                <viewController storyboardIdentifier="EBTTestViewController" title="活动详情" hidesBottomBarWhenPushed="YES" id="wp8-eF-HTb" customClass="EBTTestViewController" customModule="EBTSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fnb-rQ-6B2"/>
+                        <viewControllerLayoutGuide type="bottom" id="TrM-RZ-Tsi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WFd-I6-K6g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="axK-ar-m6U">
+                                <rect key="frame" x="88" y="229" width="199" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BSJ-Y8-DO6"/>
+                                    <constraint firstAttribute="width" constant="199" id="G02-SZ-dMi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUu-LA-NmD">
+                                <rect key="frame" x="113" y="284" width="150" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="30w-kc-8xf"/>
+                                    <constraint firstAttribute="width" constant="150" id="ydh-Dh-Djl"/>
+                                </constraints>
+                                <state key="normal" title="返回">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="fUu-LA-NmD" secondAttribute="centerX" id="Hci-Kd-Ydx"/>
+                            <constraint firstAttribute="centerY" secondItem="fUu-LA-NmD" secondAttribute="centerY" id="bZc-Xi-BCa"/>
+                            <constraint firstItem="fUu-LA-NmD" firstAttribute="top" secondItem="axK-ar-m6U" secondAttribute="bottom" constant="25" id="cjK-VE-d85"/>
+                            <constraint firstAttribute="centerX" secondItem="axK-ar-m6U" secondAttribute="centerX" id="raQ-dS-HxI"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btnClick" destination="fUu-LA-NmD" id="Zqp-cj-XlH"/>
+                        <outlet property="textFieldContent" destination="axK-ar-m6U" id="QV3-6g-u18"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ND4-XY-toc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-435.5" y="888.5"/>
+        </scene>
+        <!--活动-->
+        <scene sceneID="ANf-Gv-4ov">
+            <objects>
+                <viewController storyboardIdentifier="EBTThirdViewController" title="活动" id="ylg-eC-naD" customClass="EBTThirdViewController" customModule="EBTSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NpU-g3-zG4"/>
+                        <viewControllerLayoutGuide type="bottom" id="atV-wD-qeK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pEz-iX-F5h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFu-Qt-oSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-965.5" y="145.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c9s-7R-slk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CKf-Ut-8p5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="c0P-o1-BLI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="0so-Ac-03c"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wyf-YS-dgP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2082.5" y="675.5"/>
+        </scene>
+    </scenes>
+</document>

@@ -18,6 +18,7 @@
 		7D8BD6851BCDE9E000B88F52 /* EBTFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BD6841BCDE9E000B88F52 /* EBTFourViewController.swift */; };
 		7D8BD6991BCE3BDD00B88F52 /* ImageWithColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8BD6981BCE3BDD00B88F52 /* ImageWithColor.swift */; };
 		7D8BD6AA1BCE517800B88F52 /* 1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7D8BD6A91BCE517800B88F52 /* 1.gif */; };
+		7DDCCE361BCF48BB00DAE2DC /* EBTTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DDCCE351BCF48BB00DAE2DC /* EBTTestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		7D8BD6981BCE3BDD00B88F52 /* ImageWithColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageWithColor.swift; sourceTree = "<group>"; };
 		7D8BD69F1BCE49C900B88F52 /* UIImage_ImageWithColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIImage_ImageWithColor.h; sourceTree = "<group>"; };
 		7D8BD6A91BCE517800B88F52 /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
+		7DDCCE351BCF48BB00DAE2DC /* EBTTestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EBTTestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				7D8BD6801BCDE99B00B88F52 /* EBTSecondViewController.swift */,
 				7D8BD6821BCDE9D200B88F52 /* EBTThirdViewController.swift */,
 				7D8BD6841BCDE9E000B88F52 /* EBTFourViewController.swift */,
+				7DDCCE351BCF48BB00DAE2DC /* EBTTestViewController.swift */,
 				7D8BD6621BCDE89000B88F52 /* Main.storyboard */,
 				7D8BD6651BCDE89000B88F52 /* Images.xcassets */,
 				7D8BD6671BCDE89000B88F52 /* LaunchScreen.xib */,
@@ -241,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D8BD6611BCDE89000B88F52 /* EBTFirstViewController.swift in Sources */,
+				7DDCCE361BCF48BB00DAE2DC /* EBTTestViewController.swift in Sources */,
 				7D8BD6851BCDE9E000B88F52 /* EBTFourViewController.swift in Sources */,
 				7D8BD6811BCDE99B00B88F52 /* EBTSecondViewController.swift in Sources */,
 				7D8BD6991BCE3BDD00B88F52 /* ImageWithColor.swift in Sources */,
